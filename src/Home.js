@@ -67,7 +67,7 @@ const Home = () => {
     <React.Fragment>
   
       <SearchBar   searchTerm={searchTerm} onInputChange={onInputChange}  />
-      {<Pagination booksPerPage={booksPerPage} totalBooks={books.items.length} paginate={paginate} handleBooksPerPage={handleBooksPerPage} />}
+      <Pagination booksPerPage={booksPerPage} totalBooks={books.items.length} paginate={paginate} handleBooksPerPage={handleBooksPerPage} />
       <BookList   currentBooks={currentBooks}  />
 
       <section className="button-wrapper">
